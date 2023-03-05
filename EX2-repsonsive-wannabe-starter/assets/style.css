@@ -127,3 +127,54 @@ img {
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+ /* adattamento per schermi normali e tablet */
+ @media screen and (min-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+ }
+
+ /* adattamento per smartphone */
+ @media screen and (max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+
+    .lessons .col {
+    width: 100%;
+    }
+
+    .steps .col {
+        width: 100%;
+    }
+
+    .row{
+        flex-wrap: wrap;
+    }
+
+    /* messo in colonna l' immagine con le scritte */
+    .why-us .col-left {
+        width: 100%;
+        margin-bottom: 4rem;
+    }
+
+    .why-us .col-right {
+        width: 100%;
+    }    
+
+
+
+    /* colorazione nera */
+    .why-us{
+        background-color: rgb(32, 31, 31);
+        padding: 3rem 0;
+        margin-bottom: 0;
+    }
+
+    .steps{
+        margin-bottom: 0;
+    }
+
+ }
+
